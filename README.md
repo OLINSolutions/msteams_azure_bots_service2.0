@@ -71,7 +71,7 @@ https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/apps/apps-uplo
 </kbd>
 
 ## 2. Test out the bot in the Web Chat & Chat Emulator.  Generic Command (no xMatters integration).
-1. In the Azure Portal, slect the All resources view.  Within that view, you should see the botxmatters (Web Bot) item.
+1. In the Azure Portal, slect the All resources view.  Within that view, you should see the botxmatters (Web app Bot) item.
 
 <kbd>
   <img src="media/all_resources.png">
@@ -134,9 +134,28 @@ Hello, Bot!
 ## 4. Import the xMatters Communication Plan and configure.
 1. Import a communication plan (link: http://help.xmatters.com/OnDemand/xmodwelcome/communicationplanbuilder/exportcommplan.htm)
 
-2. Create the "MSTeams" Endpoint and add the url for the hosted bot.
+2. Copy the /engage Inbound Integration Endpoint.
 
-3. Create the "MSTeams path" Constant and add the value "/api/response".
+<kbd>
+  <img src="media/engage_inbound_integration_1.png">
+</kbd>
+
+<kbd>
+  <img src="media/engage_inbound_integration_2.png">
+</kbd>
+
+3. Create the "MSTeams Channel" Constant.
+
+<kbd>
+  <img src="media/constants.png">
+</kbd>
+
+4. Create the "MSTeams" Endpoint.
+
+<kbd>
+  <img src="media/endpoints.png">
+</kbd>
+
 
 ## 5. Configure the bot with specific xMatters information.
 
