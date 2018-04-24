@@ -6,7 +6,7 @@ Stand alone MSTeams bot hosted by Azure
 </kbd>
 
 # Pre-Requisites
-* Microsoft Azure Portal credentials.  Create Free credentials here (https://azure.microsoft.com/en-us/free/search/?&WT.srch=1&WT.mc_id=AID631184_SEM_oUHhx2Yc&lnkd=Google_Azure_Brand&gclid=EAIaIQobChMIld67-dHT2gIVgqDsCh2ZuQJDEAAYASAAEgI2tfD_BwE)
+* Microsoft Azure Portal credentials.  Create Free credentials [HERE](https://azure.microsoft.com/en-us/free/search/?&WT.srch=1&WT.mc_id=AID631184_SEM_oUHhx2Yc&lnkd=Google_Azure_Brand&gclid=EAIaIQobChMIld67-dHT2gIVgqDsCh2ZuQJDEAAYASAAEgI2tfD_BwE)
 * Microsoft Teams Account.  Create Free trial here (https://teamsdemo.office.com/)
 * Microsoft Teams App Downloaded.  Download App here (https://teams.microsoft.com/downloads)
 * xMatters account - If you don't have one, [get one](https://www.xmatters.com)!
@@ -49,13 +49,13 @@ https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/apps/apps-uplo
 1. Login to the Azure Portal and create a new resource.  Select AI - Cognitive Services - > Web App Bot
 
 <kbd>
-  <img src="media/web_app_bot.png">
+  <img src="media/azure_portal.png">
 </kbd>
 
 2. Enter the Web App Bot Information.  Click here to get a definition of the information required(https://docs.microsoft.com/en-us/azure/bot-service/bot-service-quickstart)
 
 <kbd>
-  <img src="media/create_web_app_bot.png">
+  <img src="media/create_web_bot.png">
 </kbd>
 
 3. Bot Template - Choose Node.js and Form.
