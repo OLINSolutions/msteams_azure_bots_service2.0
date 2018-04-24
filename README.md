@@ -36,15 +36,15 @@ We will run through the following setup sequence:
 
 ## 1. Setup template Azure bot as service. 
 New to Microsoft Bots?  The following are the references we will be utilizing to set everything up.
-* Setup a sample bot with Bot Service (https://docs.microsoft.com/en-us/azure/bot-service/bot-service-quickstart)
-* Test the sample Bot in Web Chat (https://docs.microsoft.com/en-us/azure/bot-service/bot-service-manage-test-webchat)
-* Test the sample Bot in MS Teams with 1 on 1 chat. (https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/bots/bots-test)
-* In MS Teams use Teams App Studio to access your bot in Teams. Essentially, in Teams App Studio you will define a Manifest that points to the bot in step 1.  
-https://docs.microsoft.com/en-us/microsoftteams/platform/get-started/get-started-app-studio
-* A couple things of note:
-The bot frameworkid is the same as the Microsoft AppID.  You will enter this in two places.  You can get the Microsoft AppID of the bot from the Azure console.
-* Export the manifest and import it to a Team.  You will be able to @botname a command to bot in that team.
-https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/apps/apps-upload
+*Setup a sample bot with Bot Service (https://docs.microsoft.com/en-us/azure/bot-service/bot-service-quickstart)*
+*Test the sample Bot in Web Chat (https://docs.microsoft.com/en-us/azure/bot-service/bot-service-manage-test-webchat)*
+*Test the sample Bot in MS Teams with 1 on 1 chat. (https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/bots/bots-test)*
+*In MS Teams use Teams App Studio to access your bot in Teams. Essentially, in Teams App Studio you will define a Manifest that points to the bot in step 1.
+https://docs.microsoft.com/en-us/microsoftteams/platform/get-started/get-started-app-studio*
+*A couple things of note:
+The bot frameworkid is the same as the Microsoft AppID.  You will enter this in two places.  You can get the Microsoft AppID of the bot from the Azure console.*
+*Export the manifest and import it to a Team.  You will be able to @botname a command to bot in that team.
+https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/apps/apps-upload*
 
 1. Login to the Azure Portal and create a new resource.  Select AI - Cognitive Services - > Web App Bot
 
