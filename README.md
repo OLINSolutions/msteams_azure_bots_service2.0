@@ -158,7 +158,32 @@ Hello, Bot!
 </kbd>
 
 
-## 5. Configure the bot with specific xMatters information.
+## 5. Point the bot towards forked xmatters repo and update repo scripts with specific xMatters information.
+1. Fork this repo.  https://github.com/kapgarxmatters/botxmatters
+
+2. In the Azure portal, select the botxmatters Web App Bot and click on the Build item.
+
+<kbd>
+  <img src="media/botxmatters_build.png">
+</kbd>
+
+
+3. Click on the Configure continous deployment option.
+
+<kbd>
+  <img src="media/botxmatters_deployment.png">
+</kbd>
+
+
+4. Enter Github credentials and point to the forked repo in step 1 and click on Sync.
+
+5. Close the Deployments window.
+
+6. Access the Github repo and edit the App.js script.  On line 165 update the url to the /engage Inbound Integration.
+
+<kbd>
+  <img src="media/app_js.png">
+</kbd>
 
 
 ## 6. Configure MS Teams Channel with connector and update xMatters configuration.
