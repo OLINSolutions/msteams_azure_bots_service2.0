@@ -1,58 +1,52 @@
-# xMatters MSTeams integration
-Stand alone MSTeams bot coded in NodeJS
+# xMatters MSTeams integration - Azure Bots as Service - 1.0
+Stand alone MSTeams bot hosted by Azure
 
 <kbd>
   <img src="https://github.com/xmatters/xMatters-Labs/raw/master/media/disclaimer.png">
 </kbd>
 
 # Pre-Requisites
-* Microsoft Teams bot appID and password 
-	* This requires you to sign up for an msbot account here (https://dev.botframework.com)
-	* Create a bot by going to here (https://dev.botframework.com/bots/new)
-* A place to host a NodeJS application
+* Microsoft Azure Portal credentials.  Create Free credentials here (https://azure.microsoft.com/en-us/free/search/?&WT.srch=1&WT.mc_id=AID631184_SEM_oUHhx2Yc&lnkd=Google_Azure_Brand&gclid=EAIaIQobChMIld67-dHT2gIVgqDsCh2ZuQJDEAAYASAAEgI2tfD_BwE)
+* Microsoft Teams Account.  Create Free trial here (https://teamsdemo.office.com/)
+* Microsoft Teams App Downloaded.  Download App here (https://teams.microsoft.com/downloads)
 * xMatters account - If you don't have one, [get one](https://www.xmatters.com)!
 
 # Files
 * [ExampleCommPlan.zip](ExampleCommPlan.zip) - This is an example comm plan to help get started. 
 
 # How it works
-Once this is setup then you can install the application into MS Teams, when a message gets sent to the bot the message gets processed by the NodeJS application and makes the required calls to xMatters and returns a response message.
-
-# Installation
-Details of the installation go here. 
-
-## xMatters set up
-
-1. Import a communication plan (link: http://help.xmatters.com/OnDemand/xmodwelcome/communicationplanbuilder/exportcommplan.htm)
-
-2. Create the "MSTeams" Endpoint and add the url for the hosted bot.
-
-3. Create the "MSTeams path" Constant and add the value "/api/response".
-
-## New to Microsoft Bots?
-1. Setup a sample bot with Bot Service
-https://docs.microsoft.com/en-us/azure/bot-service/bot-service-quickstart
-
-2. Test the sample Bot in Web Chat
-https://docs.microsoft.com/en-us/azure/bot-service/bot-service-manage-test-webchat
-
-3. Test the sample Bot in MS Teams with 1 on 1 chat.
-https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/bots/bots-test
-
-4. In MS Teams use Teams App Studio to access your bot in Teams. Essentially, in Teams App Studio you will define a Manifest that points to the bot in step 1.  
-https://docs.microsoft.com/en-us/microsoftteams/platform/get-started/get-started-app-studio
-
-A couple things of note:
-a. The bot frameworkid is the same as the Microsoft AppID.  You will enter this in two places.  You can get the Microsoft AppID of the bot from the Azure console.
+Once the bot is running on Azure, you can add it to your MS Teams Team Channels.  Once added, within a channel you can interact with the bot by typing @botxmatters [command]
 
 <kbd>
-  <img src="need picture">
+  <img src="https://github.com/xmatters/xMatters-Labs/raw/master/media/teams.png">
 </kbd>
 
-5. Export the manifest and import it to a Team.  You will be able to @botname a command to bot in that team.
+# Installation
+We will run through the following setup sequence:
+1. Setup template Azure bots as a service in the Azure portal.
+2. Point the bot from step one to Github repo for xMatters bot.
+3. Test out the bot in the Web Chat & Chat Emulator.  Generic Command (no xMatters integration).
+4. Test out the bot 1 on 1 in the MS Teams App.  Generic command (no xMatters integration).
+5. Import the xMatters Communication Plan and configure.
+6. Configure the bot with specific xMatters information.
+7. Configure MS Teams Channel with connector and update xMatters configuration.
+8. Test out the bot in the Web Chat & Chat Emulator.  xMatters commands.
+9. Test out the bot 1 on 1 in the MS Teams app.  xMatters commands.
+10. Use MS Teams App Studio in MS Teams to create an app manifest.  This manifest will be used to add the bot to Teams/channels.
+
+## 1. Setup template Azure bot as service. 
+New to Microsoft Bots?  The following are the references we will be utilizing to set everything up.
+* Setup a sample bot with Bot Service (https://docs.microsoft.com/en-us/azure/bot-service/bot-service-quickstart)
+* Test the sample Bot in Web Chat (https://docs.microsoft.com/en-us/azure/bot-service/bot-service-manage-test-webchat)
+* Test the sample Bot in MS Teams with 1 on 1 chat. (https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/bots/bots-test)
+* In MS Teams use Teams App Studio to access your bot in Teams. Essentially, in Teams App Studio you will define a Manifest that points to the bot in step 1.  
+https://docs.microsoft.com/en-us/microsoftteams/platform/get-started/get-started-app-studio
+* A couple things of note:
+The bot frameworkid is the same as the Microsoft AppID.  You will enter this in two places.  You can get the Microsoft AppID of the bot from the Azure console.
+* Export the manifest and import it to a Team.  You will be able to @botname a command to bot in that team.
 https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/apps/apps-upload
 
-6. Now you have a working bot in teams you can customize it with the following information.
+1. Login to the Azure Portal and create a new resource.  Select 
 
 ## Deploy app from Github repo to Azure
 1. Fork the sample repo.
@@ -146,6 +140,13 @@ The bot frameworkid is the same as the Microsoft AppID.  You will enter this in 
 2.Export the manifest and import it to a Team.  You will be able to @botname a command to bot in that team.
 https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/apps/apps-upload
 
+## xMatters set up
+
+1. Import a communication plan (link: http://help.xmatters.com/OnDemand/xmodwelcome/communicationplanbuilder/exportcommplan.htm)
+
+2. Create the "MSTeams" Endpoint and add the url for the hosted bot.
+
+3. Create the "MSTeams path" Constant and add the value "/api/response".
 
 # Testing
 This integration has had some testing but more is required, to do this follow these steps in windows:
