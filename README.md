@@ -70,8 +70,43 @@ https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/apps/apps-uplo
   <img src="media/all_resources.png">
 </kbd>
 
-## Deploy app from Github repo to Azure
-1. Fork the sample repo.
+## 2. Test out the bot in the Web Chat & Chat Emulator.  Generic Command (no xMatters integration).
+1. In the Azure Portal, slect the All resources view.  Within that view, you should see the botxmatters (Web Bot) item.
+
+2. Click on it.
+
+3. Click on the Web Chat item.
+
+4. Enter the following command.
+```
+Hello, Bot!
+```
+
+5. The bot will return a question.  Answer the bot and continue with the dialog.  You have successfully tested the bot in the Web Chat.
+
+6. Download the MS Teams Emulator and follow the instructions to install and configure from here (https://docs.microsoft.com/en-us/azure/bot-service/bot-service-debug-emulator)
+
+7. Obtain the AppId and App Password from the Azure Portal in the bot Application Settings.
+
+8. In the Emulator connect using the AppID and the App Password
+
+9. Once connected, enter the following command.
+Enter the following command.
+```
+Hello, Bot!
+```
+
+10. The bot will return a question.  Answer the bot and continue with the dialog.  You have successfully tested the bot in the Emulator.
+
+## 3. Test out the bot 1 on 1 in the MS Teams App.  Generic command (no xMatters integration).
+1. Use the following to test 1 on 1 in the MS Teams App. (https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/bots/bots-test)
+
+2. Once in the App in the 1 on 1 chat with the bot enter the following command.
+```
+Hello, Bot!
+```
+3. The bot will return a question.  Answer the bot and continue with the dialog.  You have successfully tested the bot in MS Teams.
+
 
 2. Login to Azure portal.  Create a new bot.  This will create a new app service. 
 https://docs.microsoft.com/en-us/azure/bot-service/bot-service-quickstart
