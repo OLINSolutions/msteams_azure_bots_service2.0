@@ -18,7 +18,7 @@ Stand alone MSTeams bot hosted by Azure
 Once the bot is running on Azure, you can add it to your MS Teams Team Channels.  Once added, within a channel you can interact with the bot by typing @botxmatters [command]
 
 <kbd>
-  <img src="https://github.com/xmatters/xMatters-Labs/raw/master/media/working_ms_teams.png">
+  <img src="media/working_ms_teams.png">
 </kbd>
 
 # Installation
@@ -49,25 +49,25 @@ https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/apps/apps-uplo
 1. Login to the Azure Portal and create a new resource.  Select AI - Cognitive Services - > Web App Bot
 
 <kbd>
-  <img src="https://github.com/xmatters/xMatters-Labs/raw/master/media/web_app_bot.png">
+  <img src="media/web_app_bot.png">
 </kbd>
 
 2. Enter the Web App Bot Information.  Click here to get a definition of the information required(https://docs.microsoft.com/en-us/azure/bot-service/bot-service-quickstart)
 
 <kbd>
-  <img src="https://github.com/xmatters/xMatters-Labs/raw/master/media/create_web_app_bot.png">
+  <img src="media/create_web_app_bot.png">
 </kbd>
 
 3. Bot Template - Choose Node.js and Form.
 
 <kbd>
-  <img src="https://github.com/xmatters/xMatters-Labs/raw/master/media/bot_template.png">
+  <img src="media/bot_template.png">
 </kbd>
 
 4. Click Create.  A number of new resources are created in the All resouces View.
 
 <kbd>
-  <img src="https://github.com/xmatters/xMatters-Labs/raw/master/media/all_resources.png">
+  <img src="media/all_resources.png">
 </kbd>
 
 ## Deploy app from Github repo to Azure
