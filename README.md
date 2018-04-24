@@ -187,54 +187,107 @@ Hello, Bot!
 
 
 ## 6. Configure MS Teams Channel with connector and update xMatters configuration.
+1.  Use the following resource to configure a custom connector.(https://docs.microsoft.com/en-us/microsoftteams/office-365-custom-connectors)
+
+2. Update the xMatters Constant with the connector.
 
 
 ## 7. Test out the bot in the Web Chat & Chat Emulator.  xMatters commands.
+1. In the Azure Portal, slect the All resources view.  Within that view, you should see the botxmatters (Web app Bot) item.
+
+<kbd>
+  <img src="media/all_resources.png">
+</kbd>
+
+2. Click on it.
+
+<kbd>
+  <img src="media/botxmatters.png">
+</kbd>
+
+3. Click on the Test Web Chat item.
+
+<kbd>
+  <img src="media/botxmatters_web_chat.png">
+</kbd>
+
+4. Enter the following command.
+1. In the Azure Portal, slect the All resources view.  Within that view, you should see the botxmatters (Web app Bot) item.
+
+<kbd>
+  <img src="media/all_resources.png">
+</kbd>
+
+2. Click on it.
+
+<kbd>
+  <img src="media/botxmatters.png">
+</kbd>
+
+3. Click on the Web Chat item.
+
+<kbd>
+  <img src="media/botxmatters_web_chat.png">
+</kbd>
+
+4. Enter the following command.
+```
+Help
+
+engage [Group Name]
+```
+
+5. The bot will return xmatters activity.
+
+6. Download the MS Teams Emulator and follow the instructions to install and configure from here (https://docs.microsoft.com/en-us/azure/bot-service/bot-service-debug-emulator)
+
+7. Obtain the AppId and App Password from the Azure Portal in the bot Application Settings.
+
+<kbd>
+  <img src="media/botxmatters_application_settings.png">
+</kbd>
+
+8. In the Emulator connect using the AppID and the App Password
+
+<kbd>
+  <img src="media/Emulator.png">
+</kbd>
+
+9. Once connected, enter the following command.
+Enter the following command.
+```
+Help
+
+engage [Group Name]
+```
+
+10. The bot will return xMatters activity.
 
 
 ## 9. Test out the bot 1 on 1 in the MS Teams app.  xMatters commands.
+1. Use the following to test 1 on 1 in the MS Teams App. (https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/bots/bots-test)
 
+2. Once in the App in the 1 on 1 chat with the bot enter the following command.
+```
+Help
+
+engage [Group Name]
+```
+3. The bot will return xMatters Activity.
+
+<kbd>
+  <img src="media/working_ms_teams.png">
+</kbd>
 
 ## 10. Use MS Teams App Studio in MS Teams to create an app manifest.  This manifest will be used to add the bot to Teams/channels.
 
 1. In MS Teams use Teams App Studio to access your bot in Teams. Essentially, in Teams App Studio you will define a Manifest that points to the bot in step 1.  
 https://docs.microsoft.com/en-us/microsoftteams/platform/get-started/get-started-app-studio
 
+2. In the Manifest enter the AppId and the App Password.
+
 2.Export the manifest and import it to a Team.  You will be able to @botname a command to bot in that team.
 https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/apps/apps-upload
 
 
 # Testing
-This integration has had some testing but more is required, to do this follow these steps in windows:
-
-1. download the msteams botframework emulator
-
-	https://github.com/Microsoft/BotFramework-Emulator/releases
-
-2. Download the ngrok executable to your local machine.
-
-	https://ngrok.com/
-
-3. Open the emulator's App Settings dialog, enter the path to ngrok, select whether or not to bypass ngrok for local addresses, and click Save.
-
-4. connect to the url (localhost if testing locally)
-
-	https://hosted-site.com/api/messages
-
-5. type in help to get the list of commands
-
-# Development
-
-To run a dev environment locally run:
-
-```
-
-npm run dev
-
-```
-
-This will automatically restart the app when any files are changed.
-
-
-
-
