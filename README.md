@@ -12,7 +12,7 @@ Stand alone MSTeams bot hosted by Azure
 * xMatters account - If you don't have one, [get one](https://www.xmatters.com)!
 
 # Files
-* [ExampleCommPlan.zip](ExampleCommPlan.zip) - This is an example comm plan to help get started. 
+* [MSTeamsAzureBot.zip](MSTeamsAzureBot.zip) - This is an example comm plan to help get started. 
 
 # How it works
 Once the bot is running on Azure, you can add it to your MS Teams Team Channels.  Once added, within a channel you can interact with the bot by typing @botxmatters [command]
